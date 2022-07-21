@@ -1,0 +1,161 @@
+.banner{
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    color: white;
+    margin: 100px;
+    border-radius: 30px;
+    
+}
+
+.split{
+    
+    width: 50%;
+}
+.split h1{
+    font-size: 5vw;
+}
+.split img{
+    width: 100%;
+    height: auto;
+}
+.banner-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 187px;
+    height: 56px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.nav-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 312px;
+    height: 312px;
+    
+    background-color: black;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 10px;
+    
+    
+}
+.nav-button button{
+    
+    font-size: 0.87rem;
+    font-weight: 900;
+    width: 252px;
+    height: 64px;
+    max-width: 252px;
+    min-width: 50px;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.nav-button button:hover{
+    background-color: brown;
+}
+.nav-button button:focus{
+    background-color: blueviolet;
+}
+.second-section{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+.blog-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.blog-little-div{
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.blog-little-div button{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.blog-little-div img{
+    width: 100%;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 100px;
+}
+footer nav li{
+    list-style: none;
+    margin-right: 20px;
+}
+footer div{
+    text-align: center;
+}
+footer nav>ul{
+    display: flex;
+    justify-content: center;
+}
+#last-div{
+    margin-top: 30px;
+    border-top: 1px solid gray;
+}
+.upcoming{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.little-div{
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+}
+@media screen and (max-width:576px) {
+    .banner{
+        display: block;
+    }
+    .split{
+        width: 100%;
+        text-overflow: ellipsis;
+    }
+    .second-section{
+        display: block;
+    }
+    .blog-div{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav-button{
+        background-color: white;
+    }
+    footer nav>ul{
+        display: block;
+    }
+}
+@media screen and (min-width: 577px) and (max-width:992px){
+    .second-section{
+        display: block;
+    }
+    .blog-div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav-button{
+        display: flex;
+        width: 100%;
+        height: min-content;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
