@@ -137,6 +137,9 @@ footer nav>ul{
     .blog-div{
         grid-template-columns: repeat(1, 1fr);
     }
+    .upcoming{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .nav-button{
         background-color: white;
     }
@@ -149,6 +152,9 @@ footer nav>ul{
         display: block;
     }
     .blog-div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .upcoming{
         grid-template-columns: repeat(2, 1fr);
     }
     .nav-button{
